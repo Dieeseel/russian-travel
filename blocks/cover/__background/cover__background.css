@@ -1,9 +1,12 @@
 .cover__background {
   width: 100%;
-
-  z-index: 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
   opacity: 70%;
   transition: linear 0.4s;
+  max-height: 740px;
 }
 
 .cover__background:hover {
