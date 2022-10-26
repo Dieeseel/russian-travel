@@ -1,0 +1,29 @@
+.website__link {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-decoration: none;
+  color: #fff;
+}
+
+.website__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: ease-in-out 0.4s;
+}
+
+.website__link:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .website__link {
+    padding: 0 16px;
+  }
+}
